@@ -13,8 +13,8 @@ This optimized version of xLSTM is designed to work with the `xlstm-kernels` pac
 git clone https://github.com/Eliovp/xlstm-kernels.git
 cd xlstm-kernels
 
-# Install the package (this will automatically install the modified xLSTM library as a dependency)
-pip install -e .
+# Install both packages using setup.py
+python setup.py install
 ```
 
 ### Option 2: Install Separately
@@ -23,13 +23,13 @@ pip install -e .
 # Clone and install the kernels package
 git clone https://github.com/Eliovp/xlstm-kernels.git
 cd xlstm-kernels
-pip install -e .
+python setup.py install
 cd ..
 
 # Clone and install this optimized xLSTM library
 git clone https://github.com/Eliovp/xlstm.git
 cd xlstm
-pip install -e .
+python setup.py install
 ```
 
 ## AMD Optimizations
@@ -73,9 +73,9 @@ pip install xlstm
 ```
 Or clone from github:
 ```bash
-git clone https://github.com/NX-AI/xlstm.git
+git clone https://github.com/Eliovp/xlstm.git
 cd xlstm
-pip install -e .
+python setup.py install
 ```
 
 ## Requirements
