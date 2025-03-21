@@ -9,18 +9,27 @@ This optimized version of xLSTM is designed to work with the `xlstm-kernels` pac
 ### Option 1: Install Everything at Once (Recommended)
 
 ```bash
-# This will install both the kernels and the optimized xLSTM library
-pip install git+https://github.com/Eliovp/xlstm-kernels.git
+# Clone the xlstm-kernels repository
+git clone https://github.com/Eliovp/xlstm-kernels.git
+cd xlstm-kernels
+
+# Install the package (this will automatically install the modified xLSTM library as a dependency)
+pip install -e .
 ```
 
 ### Option 2: Install Separately
 
 ```bash
-# First install the kernels package
-pip install git+https://github.com/Eliovp/xlstm-kernels.git
+# Clone and install the kernels package
+git clone https://github.com/Eliovp/xlstm-kernels.git
+cd xlstm-kernels
+pip install -e .
+cd ..
 
-# Then install this optimized xLSTM library
-pip install git+https://github.com/Eliovp/xlstm.git
+# Clone and install this optimized xLSTM library
+git clone https://github.com/Eliovp/xlstm.git
+cd xlstm
+pip install -e .
 ```
 
 ## AMD Optimizations
